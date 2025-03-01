@@ -1,0 +1,286 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #2cbc9f;
+}
+
+h3{
+    text-shadow: 1px 1px 2px black;
+}
+
+#contenedorMain{
+    display: flex;
+    height: 100vh;
+    gap: 15px;
+    padding: 40px;
+}
+
+.contenedoresGral{
+    background: rgb(65,65,65);
+    background: linear-gradient(180deg, rgba(65,65,65,1) 0%, rgba(24,24,24,1) 100%);
+    padding: 10px;
+    border-radius: 20px;
+    color:white;
+
+    box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+    -webkit-box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+}
+
+
+
+/*Info del usuario*/
+#contenedorMenu{
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+    overflow:hidden;
+    padding: 10px;
+    
+}
+
+#usuarioLoggeado{
+    flex: 15%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+#usuarioPerfil{
+    border:1px solid white ;
+    background: rgb(65,65,65);
+    background: linear-gradient(180deg, rgba(65,65,65,1) 0%, rgba(24,24,24,1) 100%);
+    flex: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+
+    display: flex;
+    gap: 10px;
+    
+}
+
+#usuarioPerfil:hover{
+    cursor: pointer;
+    border: none;
+    background: rgb(224,224,224);
+    background: linear-gradient(180deg, rgba(224,224,224,1) 0%, rgba(173,173,173,1) 100%);
+    transform: scale(0.95);
+
+}
+
+#logOutButton{
+    padding: 15px;
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+#logOutButton:hover{
+    background-color: #5ee97c;
+    color: white;
+}
+
+#contactosUsuario{
+    flex: 90%
+}
+
+#fotoPerfilUsuario{
+    width: 15%;
+    border-radius: 50%;
+}
+
+/*Lista de Contactos*/
+#contactosUsuario{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 100vh;
+}
+
+#cabeceraLista{
+    flex: 10%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#contactosUsuario hr{
+    width: 90%;
+}
+
+#grupoButton{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #2ec950;
+    color:white;
+
+}
+
+#grupoButton:hover{
+    background-color: #5ee97c;
+
+}
+
+#listaContactos{
+
+    flex: 90%;
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+    padding: 7px 0px;
+    padding-right: 10px;
+    gap:7px;
+
+    min-height: 0%;
+    max-height: 100%;
+    overflow-y: auto;
+
+}
+
+.contacto{
+    display: flex;
+    gap: 10px;
+    border: 1px solid white;
+    background: rgb(65,65,65);
+    background: linear-gradient(180deg, rgba(65,65,65,1) 0%, rgba(24,24,24,1) 100%);
+    padding: 7px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.fotoContacto{
+    width: 10%;
+    border-radius: 50%;
+}
+
+.contacto:hover{
+    cursor: pointer;
+    background: rgb(224,224,224);
+    background: linear-gradient(180deg, rgba(224,224,224,1) 0%, rgba(133,133,133,1) 100%);
+
+    transform: scale(0.95);
+
+}
+
+/*Parte del Chat*/
+#contenedorChat{
+    flex: 70%;
+    width: 100%;
+    background-color: rgba(47, 47, 47, 0.933);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.chatGeneral{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*Info del contacto*/
+#infoContactoChat{
+    flex:10%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: rgb(245,245,245);
+    background: linear-gradient(180deg, rgba(245,245,245,1) 0%, rgba(196,196,196,1) 100%);
+
+    color: black;
+}
+
+#fotoPerfilContacto{
+    width: 5%;
+    border-radius: 50%;
+    
+}
+
+
+/*Chat como tal donde aparecen los mensajes */
+#chatTexto{
+    color: black;
+    background: rgb(245,245,245);
+    background: linear-gradient(180deg, rgba(245,245,245,1) 0%, rgba(196,196,196,1) 100%);
+    flex:80%;
+
+}
+
+.userDestinatario{
+    font-weight: bolder;
+    color: red;
+    display: inline;
+    
+}
+
+.contMensaje{
+    margin-top: 5px;
+}
+
+.userUsuario{
+    font-weight: bolder;
+    color: rgb(134, 134, 255);
+    display: inline;
+}
+
+.mensajeChat{
+    display: inline;
+}
+
+/*Parte donde escribes y envias*/
+#inputArea{
+    flex: 10%;
+    display: flex;
+    gap: 5px;
+    background: rgb(245,245,245);
+    background: linear-gradient(180deg, rgba(245,245,245,1) 0%, rgba(196,196,196,1) 100%);
+    
+}
+
+#inputMensaje{
+    flex:60%;
+    border-radius: 10px;
+    
+}
+
+#inputMensaje:hover{
+    background-color: gainsboro;
+}
+
+.buttonMensaje{
+    border: none;
+    border-radius: 10px;
+    background-color: #2ec950;
+    color:white;
+    padding: 0px 10px 0px 10px;
+}
+
+.buttonMensaje:hover{
+    background-color: #5ee97c;
+}
+
+
+

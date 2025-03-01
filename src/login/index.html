@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Iniciar sesion</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+     
+        <div id="contInicioSesion"> 
+
+            <h1>Iniciar sesión</h1>
+
+                <form action="/src/chat/chat.html" method="" autocomplete="off">
+
+                    <div class="inputForm">
+                        <label for="in_username">Usuario:</label>
+                        <input type="text" name="username" id="in_username" required>
+
+                    </div>
+           
+                    <div class="inputForm">
+                        <label for="in_password">Contraseña:</label>
+                        <input type="password" name="password" id="in_password" required>
+
+                    </div>
+                
+
+                    <div class="boton">
+                        <button id="btn_Entrar">Entrar</button>
+                    </div>
+                 
+                </form>
+
+                <p>¿No tienes cuenta? <a class="irRegistro" href="">Registrate</a></p>
+
+        </div>
+
+        <div id="contRegistro"> 
+
+            <h1>Registrarse</h1>
+
+                <form action="" method="post" autocomplete="off">
+
+                    <div class="inputForm">
+                        <label for="in_username">Usuario:</label>
+                        <input type="text" name="username" id="in_username" required>
+
+                    </div>
+
+                    <div class="inputForm">
+                        <label for="in_password">Nombre completo:</label>
+                        <input type="text" name="nomComp" id="in_password" required>
+
+                    </div>
+
+                    <div class="inputForm">
+                        <label for="in_password">E-mail:</label>
+                        <input type="email" name="correo" id="in_password" required>
+
+                    </div>
+           
+                    <div class="inputForm">
+                        <label for="in_password">Contraseña:</label>
+                        <input type="password" name="password" id="in_password" required>
+
+                    </div>
+                    
+                    <div class="boton">
+                        <button id="btn_Entrar">Registrar</button>
+                    </div>
+                 
+                </form>
+
+                <p><a class="volverInicio" href="">Volver al inicio de sesión</a></p>  
+
+        </div>
+
+
+        <button id="hideshowForm">Mostrar</button>
+    
+</body>
+
+    <script src="index.js"></script>
+
+</html>

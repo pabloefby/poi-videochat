@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+}
+
+*{
+    font-family: Montserrat;
+}
+
+body{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    margin:0;
+
+    background-image: url("/resources/fondo3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#contInicioSesion, #contRegistro{
+
+    background-color: white;
+    height: auto;
+    
+    padding: 20px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+    box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+    -webkit-box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+
+}
+
+#contInicioSesion{
+    width: 350px
+}
+
+#contRegistro{
+   display: none;
+   width: 450px
+   
+}
+
+
+.inputForm{
+    margin: 10px;
+
+}
+
+.inputForm label{
+
+    font-weight: bold;
+}
+
+.inputForm input{
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0px 5px 0px;
+
+    border-radius: 10px;
+    font-size: large;
+}
+
+.inputForm input:hover{
+
+    background-color:  #d6efea;
+
+}
+
+
+.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#btn_Entrar{
+
+    width: 70%;
+    padding: 10px;
+    border: none;
+    margin: 5px;
+    border-radius: 30px;
+
+    background-color: #2cbc9f;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+#btn_Entrar:hover{
+    background-color: #079679;
+
+}
+
+#hideshowForm{
+
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+
+    border-radius: 10px;
+    padding:10px;
+
+}
+
+a{
+    color: #2cbc9f;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #079679;
+}

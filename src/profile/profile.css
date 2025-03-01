@@ -1,0 +1,184 @@
+
+body{
+    margin: 0;
+    padding: 30px;
+    background-color: #2cbc9f;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+hr{
+    width: 30%;
+
+}
+
+#contenedorPerfilUsuario{
+    background: rgb(65,65,65);
+    background: linear-gradient(180deg, rgba(65,65,65,1) 0%, rgba(24,24,24,1) 100%);
+    width: 80%;
+
+
+    border-radius: 20px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+    -webkit-box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+
+}
+
+#contenedorSuperior{
+    flex: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#contenedorClose{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#closeButton{
+    background-color: #2cbc9f;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+    
+}
+
+#closeButton:hover{
+    background-color: #079679;
+}
+
+
+
+#contenedorImagenPerfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#fotoPerfil{
+
+    border-radius: 50%;
+    box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+    -webkit-box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+    width: 13%;
+
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#contenedorNombreUsuario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    background-image: url("/resources/images/diamond_block.png");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    text-shadow: 3px 4px 1px black;
+
+    background-color: #2cbc9f;
+    padding: 15px;
+
+    border: 2px solid white;
+    width: auto;
+
+    border-radius: 20px;
+    box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+    -webkit-box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+}
+
+#NombreComUsuario{
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+#contenedorInferior{
+    flex: 80%;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+ 
+
+    font-weight: bolder;
+    
+}
+
+#contenedorInfoTitulo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: white;
+
+    margin-bottom: 10px;
+
+    background-color: #2cbc9f;
+
+    border-radius: 20px;
+    box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+    -webkit-box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+
+}
+
+#contenedorInformacion{
+
+    border-radius: 20px;
+    padding: 15px;
+    height: 100%;
+
+    background: rgb(224,224,224);
+    background: linear-gradient(180deg, rgba(224,224,224,1) 0%, rgba(173,173,173,1) 100%);
+
+    
+    box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+    -webkit-box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 11px 10px 18px -3px rgba(0,0,0,1);
+
+    text-align: center;
+    
+}
+
+#contenedorInformacion p{
+
+    margin: 0;
+}
+
+#contenedorInformacion input{
+
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: white;
+    color: white;
+    font-weight: bold;
+
+    box-sizing: border-box;
+}
+

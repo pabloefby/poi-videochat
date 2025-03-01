@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+
+    <div id="contenedorMain">
+
+        <div class="contenedoresGral" id="contenedorMenu">
+
+            <div id="usuarioLoggeado">
+                <div id="usuarioPerfil">
+                    <img id="fotoPerfilUsuario" src="/resources/default_pp.png" alt="ProfilePic">
+                    <h3>Usuario (Yo)</h3>
+                </div>
+                
+                <div id="logOutButton">
+                    <img src="/resources/logoutIcon.png" alt="" style="width:20px; height:20px;">
+
+                </div>
+            </div>
+
+            <div id="contactosUsuario">
+
+                <div id="cabeceraLista">
+                    <h3 style="margin: 0;">Usuarios disponibles</h3>
+                    <button id="grupoButton">+</button>
+                </div>
+
+                <hr>
+
+                <div id="listaContactos">
+                    
+                    <div class="contacto" data-nombre="Hernan">
+                        <img class="fotoContacto" src="/resources/default_pp.png" alt="ProfilePic">
+                        <h3>Hernan</h3>
+                    </div>
+
+                    <div class="contacto" data-nombre="Isaac">
+                        <img class="fotoContacto" src="/resources/default_pp.png" alt="ProfilePic">
+                        <h3>Isaac</h3>
+                    </div>
+
+                    <div class="contacto" data-nombre="Lazaro">
+                        <img class="fotoContacto" src="/resources/default_pp.png" alt="ProfilePic">
+                        <h3>Lazaro</h3>
+                    </div>
+
+                    <div class="contacto" data-nombre="???">
+                        <img class="fotoContacto" src="/resources/default_pp.png" alt="ProfilePic">
+                        <h3>???</h3>
+                    </div>
+
+
+                </div>
+        
+            </div>
+
+        </div>
+
+        <div class="contenedoresGral" id="contenedorChat">
+
+            <div class="chatGeneral" id="infoContactoChat">
+
+                <img id="fotoPerfilContacto" src="/resources/default_pp.png" alt="ProfilePic">
+                <h2 id="nombreContactoSelect">Hernan (User)</h2>
+
+            </div>
+
+            <div class="chatGeneral" id="chatTexto">
+                <div class="contMensaje">
+                    <p class="userDestinatario">Hernan: </p><p class="mensajeChat">Hola</p>
+                </div>
+                <div class="contMensaje">
+                    <p class="userUsuario">Yo: </p><p class="mensajeChat">Holi tqm cuando nos vemos dddd t estaño mucho amorsito mio</p>
+                </div>
+            </div>
+
+            <div class="chatGeneral" id="inputArea">
+                <input id="inputMensaje" type="text" placeholder="Escribe tu mensaje aqui..."> 
+                <button class="buttonMensaje">Enviar</button>
+                <button class="buttonMensaje">Llamar</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    
+</body>
+
+<script src="chat.js"></script>
+
+</html>
