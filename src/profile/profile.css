@@ -85,6 +85,12 @@ hr{
     border: 2px solid rgb(255, 255, 255);
 }
 
+
+#fotoPerfil:hover{
+    border: 2px solid #2cbc9f;
+    cursor: pointer;
+}
+
 #contenedorNombreUsuario{
     display: flex;
     align-items: center;
@@ -182,3 +188,8 @@ hr{
     box-sizing: border-box;
 }
 
+#contenedorInformacion input:hover{
+
+    background-color: #bdcac7;
+    cursor: pointer;
+}
