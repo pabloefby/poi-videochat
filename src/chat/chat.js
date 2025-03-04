@@ -9,6 +9,15 @@ document.querySelectorAll(".contacto").forEach(contacto => {
 
 });
 
+document.getElementById("usuarioPerfil").onclick = function() {
 
+  window.location.href = "/src/profile/profile.html";
 
+}
+
+document.getElementById("logOutButton").onclick = function() {
+
+  window.location.href = "/src/login/index.html";
+
+}
 
