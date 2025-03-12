@@ -39,7 +39,9 @@ body{
 
 .video{
 
-    width: 50%;
+    width: 40%;
+    max-width: 50%;
+    max-height: 20%;
 
     border-radius: 20px;
     background-color: #000;
@@ -57,7 +59,7 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 
     width: 40%;
     padding: 20px;
@@ -79,14 +81,17 @@ hr{
     cursor: pointer;
     font-weight: bolder;
     font-size: 30px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: all 0.2s ease-in-out;
 }
 
 .boton:hover{
-    background-color: #079679;
+    background-color: #d24735;
     cursor: pointer;
-
+    transform: scale(1.2);
 }
 
