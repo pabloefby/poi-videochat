@@ -87,7 +87,7 @@ body{
 
 }
 
-#btn_Entrar{
+#btn_Login, #btn_Registrar{
 
     width: 70%;
     padding: 10px;
@@ -102,10 +102,16 @@ body{
 
 }
 
-#btn_Entrar:hover{
+#btn_Login:hover{
     background-color: #079679;
 
 }
+
+#btn_Registrar:hover{
+    background-color: #079679;
+
+}
+
 
 
 #contenedor-text-inf{
